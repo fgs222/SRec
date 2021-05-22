@@ -15,3 +15,15 @@
 ## Acceso rapido del Repositorio
 
 * [tbd](tbd)
+
+## Instalación de los paquetes
+
+Primero es necesario descargar las librerías base Sphinxbase y Pocketsphinx, creamos un directorio en donde descargaremos los archivos y copiamos las librerías, para eso se abre la consola y se escriben los siguientes comandos:
+
+```console
+sudo apt install autoconf libtool automake bison python-dev swig libpulse-dev
+mkdir sphinx
+cd sphinx
+git clone https://github.com/cmusphinx/sphinxbase
+git clone https://github.com/cmusphinx/pocketsphinx
+```
