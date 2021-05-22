@@ -54,7 +54,7 @@ sudo apt-get install -qq python3 python3-pip build-essential git libasound2-dev 
 pip3 install --upgrade pip3 setuptools wheel
 pip3 install --upgrade pocketsphinx
 ```
-Una vez realizado estos pasos es necesario agregar el idioma español al reconocimiento de voz. Para eso es necesario ir a la siguiente dirección https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/Spanish/ y descargarnos los achivos siguientes: cmusphinx-es-5.2.tar.gz, es-20k.lm.gz, es.dict.
+Una vez realizado estos pasos es necesario agregar el idioma español al reconocimiento de voz. Para eso es necesario ir a la siguiente dirección https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/Spanish/ y descargarnos los siguientes archivos: [cmusphinx-es-5.2.tar.gz] (https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/Spanish/cmusphinx-es-5.2.tar.gz/download) , es-20k.lm.gz, es.dict.
 
 Descomprimimos los archivos cmusphinx-es5.2.tar.gz y es-20k.lm.g, los archivos que acabamos de descomprimir contienen los modelos y el diccionario que se va a utilizar para nuestro idioma.
 
