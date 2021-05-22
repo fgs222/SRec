@@ -27,3 +27,28 @@ cd sphinx
 git clone https://github.com/cmusphinx/sphinxbase
 git clone https://github.com/cmusphinx/pocketsphinx
 ```
+Se procede a instalarlas en el sistema:
+
+```console
+cd sphinxbase
+./autogen.sh
+make
+sudo make install
+```
+
+Una vez instalado Sphinxbase, se procede a instalar Pocketsphinx:
+
+```console
+cd ../pocketsphinx
+./autogen.sh
+make
+sudo make install
+```
+
+Se procede a instalar la interfaz que permitirá usar Pocketsphinx con Python (asegurar que esten instalados los siguientes paquetes):
+
+```console
+sudo apt-get install -qq python3 python3-dev python3-pip build-essential swig git libpulse-dev libasound2-dev pulseaudio swig
+pip install --upgrade pip setuptools wheel
+pip install --upgrade pocketsphinx
+```
