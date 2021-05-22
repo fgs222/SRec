@@ -21,7 +21,8 @@
 Primero es necesario descargar las librerías base Sphinxbase y Pocketsphinx, creamos un directorio en donde descargaremos los archivos y copiamos las librerías, para eso se abre la consola y se escriben los siguientes comandos:
 
 ```console
-sudo apt install autoconf libtool automake bison python3-dev swig libpulse-dev
+sudo apt update
+sudo apt install autoconf libtool automake bison swig python3-dev libpulse-dev
 
 mkdir sphinx
 cd sphinx
@@ -64,25 +65,6 @@ Abrimos nuevamente la consola:
 
 ```console
 python3 -c "from pocketsphinx import get_model_path; print(get_model_path())"
-```
-
-En caso de que surja el siguiente error:
-
-```console
-ImportError: No module named pocketsphinx
-```
-
-Es necesario correr el siguiente comando y ver el path que contiene la instalacion:
-
-```console
-pip3 install --upgrade pocketsphinx
-```
-
-Luego es necesario agregar el path al PYTHONPATH:
-
-```console
-PYTHONPATH=$PYTHONPATH:new_dir
-EXPORT $PYTHONPATH
 ```
 
 La dirección que obtengamos sera la que nos indica en donde es necesario guardar los archivos, pero antes es necesario hacer algunos cambios. El archivo “es-20k.lm” debe ser renombrado a “es-20k.lm.bin”. Entrando en la carpeta “cmusphinx-es-5.2/model_parameters”, se encontraremos una carpeta con un nombre similar a “voxforge_es_sphinx.cd_ptm_4000” la renombramos a “es-es”
