@@ -22,7 +22,7 @@ Primero es necesario descargar las librerías base Sphinxbase y Pocketsphinx, cr
 
 ```console
 sudo apt update
-sudo apt install autoconf libtool automake bison swig python3-dev libpulse-dev
+sudo apt install autoconf libtool automake bison swig python3-dev libpulse-dev make
 
 mkdir sphinx
 cd sphinx
@@ -50,7 +50,7 @@ sudo make install
 Se procede a instalar la interfaz que permitirá usar Pocketsphinx con Python (asegurar que esten instalados los siguientes paquetes):
 
 ```console
-sudo apt-get install -qq python3 python3-pip build-essential git libasound2-dev pulseaudio swig
+sudo apt-get install -qq python3 python3-pip build-essential git libasound2-dev pulseaudio
 
 pip3 install --upgrade pip setuptools wheel
 pip3 install --upgrade pocketsphinx
